@@ -1,21 +1,24 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Lba-Ca-ffN">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Lba-Ca-ffN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="cVs-Ap-iGI">
             <objects>
                 <navigationController storyboardIdentifier="ContactsNavigationController" id="Lba-Ca-ffN" sceneMemberID="viewController">
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="a39-92-7lW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -40,9 +43,9 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="BJV-eI-9zY">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ContactCell" textLabel="ECz-Rh-sI7" imageView="3Be-cb-SSE" style="IBUITableViewCellStyleDefault" id="6Xh-ke-e9S">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ContactCell" textLabel="ECz-Rh-sI7" imageView="3Be-cb-SSE" style="IBUITableViewCellStyleDefault" id="6Xh-ke-e9S">
                                         <rect key="frame" x="0.0" y="1" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Xh-ke-e9S" id="yj9-vw-nGo">
@@ -53,7 +56,7 @@
                                                     <rect key="frame" x="60" y="0.0" width="300" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="profile_placeholder" id="3Be-cb-SSE">
@@ -70,7 +73,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="BJV-eI-9zY" secondAttribute="trailing" id="5wz-NT-gk2"/>
                             <constraint firstItem="BJV-eI-9zY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="MxI-JS-no7"/>
@@ -80,32 +83,30 @@
                     </view>
                     <navigationItem key="navigationItem" title="Contacts" id="i46-CO-13g">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Cgd-uW-q3s">
-                            <color key="tintColor" red="0.9137254901960784" green="0.33333333333333331" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.9137254901960784" green="0.33333333333333331" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="didClickOnAddButton:" destination="BYZ-38-t0r" id="Ldc-gF-fWf"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="tableView" destination="BJV-eI-9zY" id="tTu-h2-tIu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="566.5" y="414.5"/>
+            <point key="canvasLocation" x="871" y="414"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2fL-OT-XC1">
             <objects>
                 <navigationController storyboardIdentifier="AddContactsNavigationController" id="u2i-nx-oWN" sceneMemberID="viewController">
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Wg-lX-2h6">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -138,7 +139,7 @@
                                             <constraint firstAttribute="height" constant="21" id="i81-qA-Y3I"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -178,7 +179,7 @@
                                             <constraint firstAttribute="width" constant="91" id="gg9-sM-8eO"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -205,7 +206,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="8rr-cc-sym" secondAttribute="trailing" constant="20" id="1Fc-1N-Qx3"/>
                             <constraint firstItem="8rr-cc-sym" firstAttribute="leading" secondItem="8KH-vp-FE7" secondAttribute="leading" constant="20" id="2r9-sK-nxj"/>
@@ -217,19 +218,18 @@
                     </view>
                     <navigationItem key="navigationItem" title="New Contact" id="ydN-B9-lpV">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="OVH-pu-So2">
-                            <color key="tintColor" red="0.91372549020000005" green="0.33333333329999998" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.91372549020000005" green="0.33333333329999998" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="didClickOnCancelButton:" destination="k1Q-Qo-l2E" id="hJI-De-oDT"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="ea9-LR-HyH">
-                            <color key="tintColor" red="0.91372549020000005" green="0.33333333329999998" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.91372549020000005" green="0.33333333329999998" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="didClickOnDoneButton:" destination="k1Q-Qo-l2E" id="NDx-8e-cej"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="firstNameTextField" destination="WtT-Y3-Kpy" id="yMO-DV-6aX"/>
                         <outlet property="lastNameTextField" destination="Arb-BY-Vrl" id="Y82-b8-qWD"/>
